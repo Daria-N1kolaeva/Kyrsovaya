@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="459.0" prefWidth="798.0" stylesheets="@application.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.kurs.HelloController">
+   <children>
+      <TableView fx:id="tbl" editable="true" layoutX="14.0" layoutY="20.0" prefHeight="424.0" prefWidth="552.0" />
+      <Button layoutX="603.0" layoutY="320.0" mnemonicParsing="false" onAction="#onAdd" text="Добавить" />
+      <Button layoutX="683.0" layoutY="320.0" mnemonicParsing="false" onAction="#onDel" prefHeight="25.0" prefWidth="69.0" text="Удалить" />
+      <TextField fx:id="fceli" layoutX="608.0" layoutY="71.0" prefHeight="25.0" prefWidth="139.0" />
+      <TextField fx:id="fzadachi" layoutX="608.0" layoutY="135.0" prefHeight="26.0" prefWidth="139.0" />
+      <TextField fx:id="fstart" layoutX="608.0" layoutY="196.0" prefHeight="26.0" prefWidth="139.0" />
+      <TextField fx:id="fend" layoutX="608.0" layoutY="251.0" prefHeight="26.0" prefWidth="139.0" />
+      <Button layoutX="604.0" layoutY="381.0" mnemonicParsing="false" onAction="#onxl" text="Сохранить файл в Excel " />
+      <Label layoutX="608.0" layoutY="41.0" text="Добавьте цель">
+         <effect>
+            <ColorAdjust brightness="1.0" contrast="1.0" hue="-0.84" saturation="-0.8" />
+         </effect></Label>
+      <Label layoutX="608.0" layoutY="104.0" text="Укажите задачи" textFill="WHITE" />
+      <Label layoutX="608.0" layoutY="171.0" text="Дата начала выполнения" textFill="WHITE" />
+      <Label layoutX="609.0" layoutY="229.0" text="Дата выполнения" textFill="WHITE" />
+      <Button fx:id="buttonId" layoutX="628.0" layoutY="418.0" onAction="#handleButtonAction" text="О приложении" />
+   </children>
+</AnchorPane>
